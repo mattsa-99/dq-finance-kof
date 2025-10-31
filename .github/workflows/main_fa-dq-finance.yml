@@ -5,9 +5,11 @@
 name: Build and deploy Python project to Azure Function App - fa-dq-finance
 
 on:
-  merge:
-    branches:
-      - main
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [ closed ]
+    branches: [ main ]
   workflow_dispatch:
 
 env:
