@@ -5,7 +5,7 @@
 name: Build and deploy Python project to Azure Function App - fa-dq-finance
 
 on:
-  push:
+  merge:
     branches:
       - main
   workflow_dispatch:
@@ -82,4 +82,5 @@ jobs:
           app-name: 'fa-dq-finance'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+
           
