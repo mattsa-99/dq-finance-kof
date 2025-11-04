@@ -69,9 +69,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_759C78C10B5743428DEC4DC229D766FD }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_7CACC75CC4854D02AE011CCB5E9579B2 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6AF3DEFBBDA643C0811961AE72F0ED69 }}
       
       - name: Check Azure account (debug)
         run: az account show
