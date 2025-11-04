@@ -70,7 +70,7 @@ jobs:
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_ }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
       
       - name: Check Azure account (debug)
